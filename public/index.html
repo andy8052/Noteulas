@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Noteulas</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" type="image/ico" href="images/nebLogo.png" />
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <h2 style="color: #FFFFFF">Noteulas</h2>
+            <h4>(TESTNET Only)</h4>
+        </div>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll" href="#about" title="about">Create Note</a></li>
+                    <li><a class="smoothscroll" href="#services" title="services">Read Note</a></li>
+                </ul>
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="https://github.com/andy8052/Noteulas"><i class="fa fa-github"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- end header-nav__content -->
+
+        </nav>
+        <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header>
+    <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>Welcome to Noteulas</h3>
+
+                <h1>
+                    Write and leave notes <br> on the Nebulas Blockchain. <br> Keep them to yourself <br> or share with friends.
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        Create A Note
+                    </a>
+                    <a href="#services" class="smoothscroll btn btn--stroke">
+                        Read A Note
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+
+            <div class="home-content__line"></div>
+
+        </div>
+        <!-- end home-content -->
+
+
+        <ul class="home-social">
+            <li>
+                <a href="https://github.com/andy8052/Noteulas"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+            </li>
+            <li>
+                <a href="https://nebulas.io/"><i class="fa fa-cubes" aria-hidden="true"></i><span>Nebulas.io</span></a>
+            </li>
+        </ul>
+        <!-- end home-social -->
+
+    </section>
+    <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <!--                <h3 class="subhead subhead--dark">Create A Note</h3>-->
+                <h1 class="display-1 display-1--light">Create A Note</h1>
+            </div>
+        </div>
+        <!-- end section-header -->
+
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+                <input rows="1" cols="150" placeholder="Title" id="title_send">
+
+                <textarea rows="5" cols="150" placeholder="Text" id="text_send"></textarea>
+                <a id="submit_send" class="btn">Submit</a>
+            </div>
+
+        </div>
+        <!-- end about-desc -->
+
+        <div class="about__line"></div>
+
+    </section>
+    <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-2">Read A Note</h1>
+            </div>
+            <input rows="1" cols="150" placeholder="Note ID" id="note_id">
+            <a id="submit_load" class="btn">Submit</a>
+        </div>
+        <!-- end section-header -->
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="service-text">
+                <h3 class="h2" id="note_title"></h3>
+                <p id="note">
+                </p>
+            </div>
+        </div>
+        <!-- end services-list -->
+
+    </section>
+    <!-- end s-services -->
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Glint 2017</span>
+                    <span>Site Template by <a href="https://www.colorlib.com/">Colorlib</a></span>
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <!-- end footer-bottom -->
+
+    </footer>
+    <!-- end footer -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
