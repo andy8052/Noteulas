@@ -1,4 +1,4 @@
-var dappAddress = "n1qAgNZemPcb35MLcHut64x7hEYgF3j2fQc";
+var dappAddress = "n1ov7JHU8Wr3Cphg18tGcVaniUUJRWVLPRp";
 
 $("#submit_send").click(function () {
     var title = $("#title_send").val();
